@@ -1,0 +1,397 @@
+
+body{
+  background-color:#000;
+  padding:30px;
+  margin: 30px;
+}
+
+.horiRule{
+  margin-bottom: 100px;
+  transition: fadeIn 3s;
+  -webkit-animation: ruleAnimation 3s;
+}
+@keyframes ruleAnimation {
+  from{
+    opacity: 0;
+    width: 10%;
+  }to{
+    opacity: 1;
+    width: 100%;
+  }
+}
+.chartDiv{
+  text-align: center;
+  height: 125vh;
+}
+.trendChart{
+  border: 2px solid #fff;
+  margin: 20px 40px;
+  border-radius: 30px;
+  flex-basis: 33%;
+  background-color: rgb(28, 28, 28);
+  padding: 20px;
+  transition: fadein 3s;
+  -webkit-animation: charts 3s; 
+}
+@keyframes charts{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+.chartDiv h1{
+  font-size: 64px;
+  transition: fadeIn 3s;
+  -webkit-animation: heading 3s;
+}
+@keyframes heading {
+  from{
+    left: 0;
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+
+}
+.chartMenu p {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.chartCard {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 30px;
+  padding-bottom: 50px;
+}
+#topDiv{
+display: flex;
+flex-direction: row;
+margin-bottom: 80px;
+transition: fadein 3s;
+-webkit-animation: divAnimation 3s;
+}
+@keyframes divAnimation {
+  from{
+    opacity: 0;
+    margin-top: -100px
+    
+  }to{
+    opacity: 1;
+    
+  }
+}
+.navDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+a:hover{
+  color: #0180FF;
+  font-size: 28px;
+}
+.header{
+  font-size: 60px;
+  margin-bottom: 20px;
+  padding-left: 15%;
+  transition: fadeIn 3s;
+  -webkit-animation: front 5s;
+}
+@keyframes front {
+  from{
+    opacity: 0;
+    padding-left: 10px;
+  }to{
+    opacity: 1;
+  }
+}
+/* #############################################  LIVE DATA DIV ###################################### */
+.liveDataDiv{
+  position: relative;
+  top:-90px;
+  padding-bottom: 30px;
+  width: 30%;
+  height:75vh;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5%;
+  transition: right 5s;
+  -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+    
+  }to{
+    opacity: 1;
+  }
+}
+.liveDataDiv ul{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.liveDataDiv li{
+  border-radius: 15px;
+  margin: 10px 10px;
+  list-style: none;
+  display: inline;
+  border: 1px solid #000;
+  flex-basis: 40%;
+  
+  -webkit-animation: devop 3s;
+}
+@keyframes devop {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+.liveDataDiv h1{
+  text-align: center;
+  padding: 10px;
+  line-height: 0.7;
+}
+.dataDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* #############################################  LIVE DATA DIV ###################################### */
+.mainDiv{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items:center ;
+}
+.cardContainer{
+  position: relative;
+  left: 0px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;  
+  margin: 0;
+}
+#subDiv{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 100%;
+  width: 70%;
+}
+.card{
+  width: 40%;
+  height: 35vh;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius:30px ;
+  margin: 20px 40px;
+  transition: right 5s;
+  -webkit-animation: devansh 5s;
+}
+@keyframes devansh {
+  from{
+    opacity: 0;
+    margin-top: 250px;
+  }to{
+    opacity: 1;
+    
+  }
+}
+.card label{
+  font-size: 36px;
+  display: block;
+  margin-bottom: 20px;
+}
+.card h4{
+  font-size: 25px;
+}
+.card input{
+  width: 70%;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+.selectBox{
+  padding: 20px;
+  border-radius:20px;
+  width: 60%;
+  font-size: 20px;
+}
+.convertBtn{
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 62px;
+  color: #0180FF;
+  border: none;
+  margin-bottom: 30px;
+  background-color:#000;
+  transition: top 4s;
+  -webkit-animation: fadeIn 3s;
+  -webkit-animation-direction: normal;
+}
+@keyframes fadeIn {
+  from{
+    margin-top: -20px;
+    opacity: 0;
+  }to{
+    left: 50%;
+    opacity: 1;
+    
+  }
+  
+}
+.footer{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.icon{
+  margin-right: 50%;
+}
+.hide{
+  display: none;
+}
+#mode-button{
+  background-color: #000;
+  border: none;
+  color: #fff;
+  width: 30%;
+  font-size: 25px;
+}
+
+@media screen and (min-width : 350px) and (max-width:600px){
+  body{
+    padding: 20px;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .topDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+  }
+  .navDiv{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+  }
+  a{
+    font-size: 16px;
+  }
+  .icon{
+    margin-right: 20px;
+  }
+  .header{
+    display: block;
+    text-align: left;
+  }
+  .mainDiv{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 100px;
+  }
+  .convertBtn{
+    font-size: 50px;
+  }
+  #subDiv{
+    width: 100%;
+    
+  }
+  .cardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 80%;
+    text-align: left;
+    height: 26vh;
+  }
+  .card h4,.card label,.card input{
+        font-size: 20px;
+  }
+  .card input,.card select{
+    padding: 10px;
+    width: 80%;
+  }
+  .arrow{
+    transform: rotate(90deg);
+    margin: 20px ;
+  }
+  .liveDataDiv{
+    width: 100%;
+    top: 50px;
+    height: fit-content;
+    padding: 20px 5px 0;
+    background-color: #d3d7db;
+  }
+  .liveDataDiv ul{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .liveDataDiv h1{
+    line-height: 1;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .horiRule{
+    margin-bottom: 20px;
+  }
+  .chartCard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: fit-content;
+    padding: 0;
+  }
+  .trendChart{
+    margin: 20px 0;
+    padding: 10px;
+    flex-basis: 100%;
+  }
+  .chartDiv{
+    height: auto;
+  }
+  .hide{
+    width: 100%;
+    display: block;
+    margin-bottom: -20px;
+  }
+  #mode-button{
+    display: none;
+  }
+}
